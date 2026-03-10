@@ -1,0 +1,6 @@
+node_modules/
+.env
+dist/
+.DS_Store
+taskflow-frontend/node_modules/
+taskflow-backend/node_modules/
