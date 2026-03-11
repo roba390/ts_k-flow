@@ -28,7 +28,7 @@ TaskFlow is a high-performance, full-stack task management application designed 
    git clone https://github.com/roba390/ts_k-flow
 
 ## Backend Configuration
-
+ ```bash
 Navigate to /taskflow-backend
 Run npm install
 Create a .env file:
@@ -39,17 +39,9 @@ PORT=5000
 Run npm run dev
 
 ## Frontend Configuration
+ ```bash
 Navigate to /taskflow-frontend
 Run npm install
 Run npm run dev
 
 ---
-
-### 🏁 Finalizing Project 1
-
-Go ahead and run these final commands to push the polished version to GitHub:
-
-```bash
-git add .
-git commit -m "Final Polish: Added Premium UI, Icons, and Professional README"
-git push origin main
