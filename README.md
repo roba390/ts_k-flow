@@ -1,6 +1,6 @@
 # 🚀 Ts_k flow: Premium MERN Stack Task Manager
 
-Ts_k Flow is a high-performance, full-stack task management application designed with a "Glassmorphic" modern aesthetic. Built as the first project in my Full-Stack development journey, it demonstrates a complete integration of the **MERN** (MongoDB, Express, React, Node) stack with the latest **Tailwind CSS v4** engine.
+Ts_k Flow is a high-performance, full-stack task management application designed with a "Glassmorphic" modern aesthetic. it demonstrates a complete integration of the **MERN** (MongoDB, Express, React, Node) stack with the latest **Tailwind CSS v4** engine.
 
 ## 🌟 Live Features
 - **Persistent Storage:** Integrated with **MongoDB Atlas** for 24/7 cloud data persistence.
