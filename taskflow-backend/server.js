@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGO_URI)
 // --- SCHEMA & MODEL (The Blueprint) ---
 const TaskSchema = new mongoose.Schema({
     text: { type: String, required: true },
+    completed: { type: Boolean, default: false }, // New field
     createdAt: { type: Date, default: Date.now }
 });
 
@@ -35,6 +36,14 @@ app.post('/api/tasks', async (req, res) => {
     const newTask = new Task({ text: req.body.text });
     const savedTask = await newTask.save();
     res.json(savedTask);
+});
+
+// Update task status (Toggle Complete)
+app.patch('/api/tasks/:id', async (req, res) => {
+    const task = await Task.findById(req.params.id);
+    task.completed = !task.completed;
+    await task.save();
+    res.json(task);
 });
 
 // 3. DELETE: Remove from DB
